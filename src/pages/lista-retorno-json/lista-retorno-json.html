@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar> <ion-title>Lista Retorno JSON</ion-title> </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let json of retornoJson">
+      <h2>{{ json?.title }}</h2>
+      <h3>{{ json?.body }}</h3>
+    </ion-item>
+  </ion-list>
+</ion-content>
